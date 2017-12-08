@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Disappearing Circles</title>
+		<style type="text/css">
+
+			div {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				float: left;
+			}
+			
+			#red {
+				background-color: red;
+			}
+
+			#blue {
+				background-color: blue;
+			}
+
+			#yellow {
+				background-color: yellow;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+		<div id="red"></div>
+
+		<div id="blue"></div>
+
+		<div id="yellow"></div>
+
+		<script type="text/javascript">
+			
+			document.getElementById("red").onclick = function() {
+				document.getElementById("red").style.display = "none";
+			}
+
+			document.getElementById("blue").onclick = function() {
+				document.getElementById("blue").style.display = "none";
+			}
+
+			document.getElementById("yellow").onclick = function() {
+				document.getElementById("yellow").style.display = "none";
+			}
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript Game</title>
+	</head>
+	<body>
+
+		<p>How many fingers am I holding up?</p>
+		<p>Enter a number from 0 to 5!</p>
+
+		<p><input type="text" id="guess"></p>
+
+		<p><button id="checkGuess">Guess!</button></p>
+
+		<script type="text/javascript">
+			
+			document.getElementById("checkGuess").onclick = function() {
+			
+				var answer = Math.floor(Math.random()*6);
+
+				/*step-by-step randomNumber generator
+
+				var randomNumber = Math.random();
+
+				randomNumber = randomNumber * 6; //get a number from 0-5
+
+				randomNumber = Math.floor(randomNumber); //round the answer down
+
+				*/
+
+				var guess = document.getElementById("guess").value;
+
+					if (guess == answer) {
+
+						alert("You are right!");
+
+					} else {
+
+						alert("Nope! The correct answer is " + answer + "!");
+
+					}
+
+				}
+
+		</script>
+
+
+	</body>
+</html>
